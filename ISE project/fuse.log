@@ -1,0 +1,21 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/Students/Satyshev/ISE/Hilbert_v2/DDS_and_Hilbert_TB_isim_beh.exe -prj D:/Students/Satyshev/ISE/Hilbert_v2/DDS_and_Hilbert_TB_beh.prj work.DDS_and_Hilbert_TB work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/Students/Satyshev/ISE/Hilbert_v2/DDS_and_Hilbert.v" into library work
+Analyzing Verilog file "D:/Students/Satyshev/ISE/Hilbert_v2/DDS_and_Hilbert_TB.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module DDS_GEN
+Compiling module FIR_Hilbert_transpose_54_folded_...
+Compiling module DDS_and_Hilbert
+Compiling module DDS_and_Hilbert_TB
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable D:/Students/Satyshev/ISE/Hilbert_v2/DDS_and_Hilbert_TB_isim_beh.exe
+Fuse Memory Usage: 32784 KB
+Fuse CPU Usage: 358 ms
