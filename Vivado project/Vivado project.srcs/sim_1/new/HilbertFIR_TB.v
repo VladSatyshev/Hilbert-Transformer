@@ -44,7 +44,7 @@ module HilbertFIR_TB;
 	initial 
 	begin
 		clk = 0; 
-		reset = 0; 
+		reset = 1; 
 		enb = 0;
 		mem_index = 0;
 	end
@@ -56,7 +56,7 @@ module HilbertFIR_TB;
 	
 	initial
 	begin
-		#5 reset = 1;
+		#5 reset = 0;
 		#5 enb = 1;
 	end
 	
