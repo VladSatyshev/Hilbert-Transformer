@@ -1,2 +1,0 @@
-HilbertTransformer/FIR Hilbert transpose(54) folded (fixed-point) --> FIR_Hilbert_transpose_54_folded_fixed_point
-HilbertTransformer --> HilbertTransformer

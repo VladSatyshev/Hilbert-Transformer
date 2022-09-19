@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="https://www.mathworks.com/help/schema/MathWorksDocPage">
 <head>
-<title>HDL Testbench Report for 'HilbertTransformer'</title>
+<title>HDL Check Report for 'HilbertTransformer_v2'</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <script type="text/javascript" src="file://D:/MATLAB/toolbox/hdlcoder/hdlcommon/js_css/jquery-1.7.1.js"></script>
@@ -46,24 +46,17 @@
 <div class="container_192">
 <div class="grid_192">
  <div class="page_container"><div class="content_frame">
-<h1>HDL Testbench Generation Report for 'HilbertTransformer'
-Generated on 2022-09-16 00:00:57</h1>
-<H2>HDL check for 'HilbertTransformer' complete with 2 errors, 0 warnings, and 0 messages.</H2><BR>
+<h1>HDL Code Generation Check Report for 'HilbertTransformer_v2'
+<a href="matlab:open_system('HilbertTransformer_v2');">open model 'HilbertTransformer_v2'</a><BR>
+Generated on 2022-09-19 17:06:04</h1>
+<H2>HDL check for 'HilbertTransformer_v2' complete with 0 errors, 1 warnings, and 0 messages.</H2><BR>
 <H3>The following table describes blocks for which errors, warnings or messages were reported.</H3><BR>
 <TABLE>
 <TR><TD> <B>Simulink Blocks and resources</B> </TD><TD> <B>Level</B> </TD><TD> <B>Description</B> </TD></TR><TR bgcolor="#F0F0F0"><TD>
-<a alt="hdlcoder:engine:dutismodel" href="matlab:hilite(get_param(char([72 105 108 98 101 114 116 84 114 97 110 115 102 111 114 109 101 114]),'object'),'none');open_system(char([72 105 108 98 101 114 116 84 114 97 110 115 102 111 114 109 101 114]))">HilbertTransformer</a>
+<a alt="HDLShared:hdlshared:MultirateSolver" href="matlab:hilite(get_param(char([72 105 108 98 101 114 116 84 114 97 110 115 102 111 114 109 101 114 95 118 50]),'object'),'none');open_system(char([72 105 108 98 101 114 116 84 114 97 110 115 102 111 114 109 101 114 95 118 50]))">HilbertTransformer_v2</a>
 </TD>
-<TD>error</TD>
-<TD>Cannot Generate test bench code for the entire model.
-Please specify a simulatable subsystem in your model.</TD>
-</TR>
-<TR bgcolor="#FFFFFF"><TD>
-<a alt="hdlcoder:engine:dutismodel" href="matlab:hilite(get_param(char([72 105 108 98 101 114 116 84 114 97 110 115 102 111 114 109 101 114]),'object'),'none');open_system(char([72 105 108 98 101 114 116 84 114 97 110 115 102 111 114 109 101 114]))">HilbertTransformer</a>
-</TD>
-<TD>Error</TD>
-<TD>Cannot Generate test bench code for the entire model.
-Please specify a simulatable subsystem in your model.</TD>
+<TD>Warning</TD>
+<TD>HDL test bench generation for multirate models requires a fixed step, discrete solver in single tasking mode. In the Solver pane of the configuration parameters dialog box, ensure the solver type is set to "Fixed-step" and solver to "discrete". To configure the solver to single tasking mode, under Solver details, clear the options "Treat each discrete rate as a separate task" and "Automatically handle rate transition for data transfer".</TD>
 </TR>
 </TABLE>
 <BR><BR> </div></div></div></div>
