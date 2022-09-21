@@ -33,14 +33,13 @@ module HilbertFIR_TB;
 	// TB variables
 	reg signed [9:0] mem [0:499];
 	reg signed [9:0] Hilbert_in;
-	reg signed [9:0] Hilbert_in_delayed27;
 	reg [9:0] mem_index;
 	
 	// Instantiate the Unit Under Test (UUT)
 	HilbertFIR uut (.clk(clk), .reset(reset), .enb(enb), .in(Hilbert_in), .out(Hilbert_out));
 	
-    initial $readmemh("sig4.txt", mem);
-    
+    initial $readmemh("sig2.txt", mem);
+
 	initial 
 	begin
 		clk = 0; 
@@ -63,12 +62,8 @@ module HilbertFIR_TB;
 	always @(posedge clk)
 	begin
 	    Hilbert_in <= mem[mem_index];
-	    if (mem_index >= 27)
-	    begin
-	       Hilbert_in_delayed27 <= mem[mem_index-27];
-	    end
 	    mem_index <= mem_index + 1;
-		$display("%d", Hilbert_out);
+		$display("%f", $itor(Hilbert_out * 2.0**-12.0));
 	end
 	
 endmodule

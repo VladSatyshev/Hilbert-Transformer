@@ -31,7 +31,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="27"/>
+    <Option Name="WTXSimLaunchSim" Val="42"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -87,12 +87,11 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
+      <File Path="$PSRCDIR/sim_1/new/sig5.txt"/>
+      <File Path="$PSRCDIR/sim_1/new/sig4.txt"/>
+      <File Path="$PSRCDIR/sim_1/new/sig3.txt"/>
       <File Path="$PSRCDIR/sim_1/new/sig1.txt"/>
       <File Path="$PSRCDIR/sim_1/new/sig2.txt"/>
-      <File Path="$PSRCDIR/sim_1/new/sig3.txt"/>
-      <File Path="$PSRCDIR/sim_1/new/sig4.txt"/>
-      <File Path="$PSRCDIR/sim_1/new/sig5.txt"/>
-      <File Path="$PSRCDIR/sim_1/new/sig6.txt"/>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
         <Option Name="TopModule" Val="HilbertFIR_TB"/>
